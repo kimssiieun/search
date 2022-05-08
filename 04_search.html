@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+	<title>search</title>
+	<meta charset="utf-8"/>
+	<script>
+		function schBtn(){
+			var search = document.getElementById("search");
+
+			if(search.value==""){
+				alert("비어있습니다. 내용을 기입해주세요.");
+			}
+			else if(search.value=="naver" || search.value=="네이버"){
+				location.href="http://www.naver.com";
+			}
+			else if(search.value=="pizza"){
+				location.href="01_pizza.html";
+			}
+		}
+	</script>
+ </head>
+
+ <body>
+  <p>
+	<input id="search" type="text" title="검색" placeholder="search"/>
+	<input type="button" id="btn" value="검색" title="검색" onclick="schBtn();"/>
+  </p>
+ </body>
+</html>
